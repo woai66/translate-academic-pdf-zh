@@ -230,7 +230,7 @@ class PipelineTests(unittest.TestCase):
         manifest = self.root / "relative.json"
         write_json(manifest, {"papers": [{"id": "a", "source": "source.pdf", "output": "output.pdf"}]})
         configs = load_manifest(manifest, output_tag="_reviewed")
-        self.assertEqual(configs[0]["output"], str(self.root / "output_reviewed.pdf"))
+        self.assertEqual(Path(configs[0]["output"]), (self.root / "output_reviewed.pdf").resolve())
         with self.assertRaisesRegex(ValueError, "unknown"):
             load_manifest(manifest, ["missing"])
 
