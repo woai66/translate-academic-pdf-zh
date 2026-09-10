@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+tmp/
+output/
+*.pdf
+*.png
+*.jpg
+*.ttf
+*.ttc
+*.otf
+translation_cache*/
+*.log
+.DS_Store

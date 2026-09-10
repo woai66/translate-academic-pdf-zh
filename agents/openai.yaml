@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术 PDF 中英对照翻译"
+  short_description: "将英文学术 PDF 制作为保留原版图表公式与版式的逐页中英对照稿"
+  default_prompt: "使用 $translate-academic-pdf-zh 将这篇英文论文制作成保留原版式的逐页中英对照 PDF，并完成全文渲染验收。"
